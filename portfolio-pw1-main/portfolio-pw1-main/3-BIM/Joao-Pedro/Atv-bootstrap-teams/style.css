@@ -1,0 +1,415 @@
+/* ==========================================
+   CONFIGURAÇÃO GERAL
+========================================== */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f8;
+
+    color: #333;
+}
+
+
+/* ==========================================
+   BANNER
+========================================== */
+
+.hero {
+
+    min-height: 450px;
+
+    position: relative;
+
+    /*
+       AQUI ESTÁ A IMAGEM DO BACKGROUND.
+
+       IMPORTANTE:
+       O style.css está dentro da pasta CSS.
+
+       Por isso usamos ../ para voltar
+       para a pasta principal.
+
+       Depois entramos em imagens.
+    */
+
+    background-image: url("../imagens/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center right;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ==========================================
+   GRADIENTE SOBRE O BACKGROUND
+========================================== */
+
+.hero-overlay {
+
+    min-height: 450px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(to right,
+
+            #172033 0%,
+
+            #172033 25%,
+
+            rgba(23, 32, 51, 0.95) 40%,
+
+            rgba(23, 32, 51, 0.70) 55%,
+
+            rgba(23, 32, 51, 0.25) 75%,
+
+            rgba(23, 32, 51, 0) 100%);
+
+    color: white;
+}
+
+
+/* ==========================================
+   CONTEÚDO DO BANNER
+========================================== */
+
+.hero-content {
+
+    max-width: 600px;
+
+    padding: 60px 20px;
+
+    animation:
+        fadeUp 1s ease;
+}
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.hero h1 {
+
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ==========================================
+   TEXTO
+========================================== */
+
+.hero p {
+
+    font-size: 1.25rem;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   TÍTULO DA SEÇÃO
+========================================== */
+
+.section-title {
+
+    color: #172033;
+
+    font-size: 2.3rem;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.modern-card {
+
+    border: none;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* ==========================================
+   HOVER DO CARD
+========================================== */
+
+.modern-card:hover {
+
+    transform:
+        translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+/* ==========================================
+   CONTAINER DAS IMAGENS
+========================================== */
+
+.image-container {
+
+    width: 100%;
+
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eeeeee;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   IMAGENS DOS CARDS
+========================================== */
+
+.image-container img {
+
+    width: 100%;
+
+    height: 100%;
+
+    /*
+       CONTAIN MOSTRA A IMAGEM INTEIRA.
+
+       Não corta.
+       Não distorce.
+    */
+
+    object-fit: contain;
+
+    filter:
+        grayscale(40%) saturate(80%);
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+/* ==========================================
+   HOVER DA IMAGEM
+========================================== */
+
+.modern-card:hover .image-container img {
+
+    transform: scale(1.08);
+
+    filter:
+        grayscale(0%) saturate(130%) contrast(110%);
+}
+
+
+/* ==========================================
+   TÍTULO DOS CARDS
+========================================== */
+
+.card-title {
+
+    color: #172033;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   TEXTO DOS CARDS
+========================================== */
+
+.card-text {
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.button-effect {
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.button-effect:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==========================================
+   ANIMAÇÃO
+========================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+.footer {
+
+    margin-top: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #172033;
+
+    color: white;
+}
+
+
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+
+        animation: none !important;
+
+        transition: none !important;
+    }
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height: 450px;
+
+        position: relative;
+
+        background-image: url("../imagens/banner.jpg");
+
+        background-size: cover;
+
+        background-position: center right;
+
+        background-repeat: no-repeat;
+    }
+
+
+    .hero-overlay {
+
+        min-height: 450px;
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        /*
+       GRADIENTE BRANCO À ESQUERDA
+       QUE DESAPARECE EM DIREÇÃO À IMAGEM
+    */
+
+        background:
+            linear-gradient(to right,
+
+                #ffffff 0%,
+
+                #ffffff 25%,
+
+                rgba(255, 255, 255, 0.98) 38%,
+
+                rgba(255, 255, 255, 0.85) 50%,
+
+                rgba(255, 255, 255, 0.45) 65%,
+
+                rgba(255, 255, 255, 0) 82%);
+
+        color: #111111;
+    }
+
+    .hero h1 {
+
+        font-size: 2.2rem;
+    }
+
+
+    .hero p {
+
+        font-size: 1.1rem;
+    }
+
+
+    .image-container {
+
+        height: 220px;
+    }
+}

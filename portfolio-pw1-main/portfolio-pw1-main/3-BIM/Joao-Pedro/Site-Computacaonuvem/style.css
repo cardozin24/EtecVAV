@@ -1,0 +1,192 @@
+.body {
+    background-color: #f3f7fc;
+    color: #1d2d44;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-nuvem {
+    background-color: #071f35;
+}
+
+.navbar-nuvem .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nuvem .nav-link {
+    color: #dceafa;
+    margin-left: 10px;
+}
+
+.navbar-nuvem .nav-link:hover,
+.navbar-nuvem .nav-link.active {
+    color: #6ec6ff;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #071f35, #124f7a);
+    color: white;
+    padding: 70px 20px;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.imagem-placeholder {
+    height: 280px;
+    background-color: #e5eff9;
+    border: 2px dashed #46779f;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #46779f;
+    font-size: 1.1rem;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-secao h2 {
+    color: #071f35;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titulo-secao p {
+    color: #526579;
+}
+
+.card-nuvem {
+    border: 1px solid #d7e3ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(7, 31, 53, 0.08);
+    transition: 0.3s;
+}
+
+.card-nuvem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(7, 31, 53, 0.12);
+}
+
+.card-nuvem h3 {
+    color: #124f7a;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card-nuvem p {
+    line-height: 1.6;
+}
+
+.declaracao-ia {
+    background-color: #e5eff9;
+    border-left: 5px solid #124f7a;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.declaracao-ia h2 {
+    color: #071f35;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.declaracao-ia p {
+    color: #1d2d44;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 1px solid #d7e3ef;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(7, 31, 53, 0.06);
+}
+
+.info-box h3 {
+    color: #124f7a;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    margin-bottom: 0;
+}
+
+.footer-nuvem {
+    background-color: #071f35;
+    color: #dceafa;
+    padding: 25px 0;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-header {
+        padding: 50px 20px;
+    }
+
+    .navbar-nuvem .nav-link {
+        margin-left: 0;
+    }
+
+    .imagem-placeholder {
+        height: 220px;
+    }
+}
+
+.footer-nuvem {
+    background-color: #071f35;
+    color: #dceafa;
+    padding: 12px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-nuvem p {
+    margin: 2px 0;
+    font-size: 0.85rem;
+}
+
+.fonte-box {
+    background-color: #ffffff;
+    border: 1px solid #d7e3ef;
+    border-radius: 12px;
+    padding: 22px;
+    height: 100%;
+    box-shadow: 0 4px 12px rgba(7, 31, 53, 0.06);
+}
+
+.fonte-box h3 {
+    color: #124f7a;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.fonte-box a {
+    color: #1d5f8c;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.fonte-box a:hover {
+    color: #071f35;
+    text-decoration: underline;
+}
